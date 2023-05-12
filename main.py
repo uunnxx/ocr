@@ -37,7 +37,6 @@ results = pytesseract.image_to_data(image, output_type=Output.DICT)
 # print(results)
 
 
-
 for i in range(0, len(results['text'])):
     x = results['left'][i]
     y = results['top'][i]
